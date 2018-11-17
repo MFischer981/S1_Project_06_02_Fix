@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 2
+   
+   Save your Fork Graphic Design Styles
+   Author: Micah Fischer
+   Date:   11-9-18
+
+   Filename: sf_effects.css
+
+*/
+
+/* Body Header Styles */
+/* Added a drop shadow filter to the body element. */
+body {
+    filter: drop-shadow(10px 10px 50px rgb(51, 51, 51))
+}
+
+
+/* Navigation Tabs List Styles */
+/* Added a background image, disabled repeat. Centered the background image and set the image to a size of cover so it fills the entire area. */
+body>header nav.tabs {
+    background: url("sf_back1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Set the perspective of the list items and rotated the items to 20deg on the x-axis. */
+body>header nav.tabs li {
+    transform: perspective(50px) rotateX(20deg);
+}
+
+body>header nav.tabs li:hover {
+    background:  rgb(231, 231, 231);
+}
+
+/* Left Section Styles */
+/* Added a border radius to the nav with a vertical class. Set the border radius to 25px. */
+section#left nav.vertical {
+    border: 1px solid rgb(20, 167, 170);
+    border-radius: 25px;
+}
+
+/* Set the h1 in the vertical nav to have a border-radius on 25px on the top left and right corners. */
+section#left nav.vertical h1 {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+/* Center Article Styles */
+/* Set the section background to a radial gradient with white at a stop of 30% out to grey at 100%. Added a solid 1px border. Added a box shadow with a 10px offset in both directions. */
+section#center article {
+    background-image: radial-gradient(white 30%, rgb(151, 151, 151));
+    border: 1px solid rgb(151, 151, 151);
+    box-shadow: 10px 10px 20px rgb(51, 51, 51);
+}
+
+/* Blockquote Styles */
+/* Scaled a background image to fit around the blockquote text, turned off repeat for the image. Added a drop shadow with a 5px offset in both directions with a 20px blur. */
+blockquote {
+    background: url("sf_speech.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: drop-shadow(5px 5px 10px rgb(51, 51, 51));
+}
+
+/* Rounded image to a circle. */
+cite img {
+    border-radius: 50%;
+}
