@@ -52,11 +52,12 @@ section#left nav.vertical h1 {
 }
 
 /* Center Article Styles */
-/* Set the section background to a radial gradient with white at a stop of 30% out to grey at 100%. Added a solid 1px border. Added a box shadow with a 10px offset in both directions. */
+/* Set the section background to a radial gradient with white at a stop of 30% out to grey at 100%. Added a solid 1px border. Added a box shadow with a 10px offset in both directions. Added border radius of 50px. */
 section#center article {
     background-image: radial-gradient(white 30%, rgb(151, 151, 151));
     border: 1px solid rgb(151, 151, 151);
     box-shadow: 10px 10px 20px rgb(51, 51, 51);
+    border-radius: 50px;
 }
 
 /* Blockquote Styles */
